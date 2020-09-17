@@ -13282,8 +13282,11 @@ div#notebook {
 <span class="c1"># apart from the ones above</span>
 <span class="k">def</span> <span class="nf">compile_ry</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">theta</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    --RY(theta)-- is equivalent to</span>
-<span class="sd">    --RX(pi/2)-RZ(theta)-RX(-pi/2)--</span>
+<span class="sd">    --RY(theta)-- </span>
+<span class="sd">    </span>
+<span class="sd">    is equivalent to</span>
+<span class="sd">    </span>
+<span class="sd">    --RX(pi/2)--RZ(theta)--RX(-pi/2)--</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">compile_rx</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>\
            <span class="n">compile_rz</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">theta</span><span class="p">),</span>\
@@ -13292,7 +13295,10 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">compile_I</span><span class="p">(</span><span class="n">qubit</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    --I-- is equivalent to</span>
+<span class="sd">    --I-- </span>
+<span class="sd">    </span>
+<span class="sd">    is equivalent to</span>
+<span class="sd">    </span>
 <span class="sd">    --RX(2*pi)-- or</span>
 <span class="sd">    --RZ(2*pi)-- or</span>
 <span class="sd">    --RY(2*pi)--</span>
@@ -13302,8 +13308,11 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">compile_H</span><span class="p">(</span><span class="n">qubit</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    --H-- is equivalent to</span>
-<span class="sd">    --RZ(pi/2)-RX(pi/2)-RZ(pi/2)--</span>
+<span class="sd">    --H-- </span>
+<span class="sd">    </span>
+<span class="sd">    is equivalent to</span>
+<span class="sd">    </span>
+<span class="sd">    --RZ(pi/2)--RX(pi/2)--RZ(pi/2)--</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">compile_rz</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>\
            <span class="n">compile_rx</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>\
@@ -13312,7 +13321,10 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">compile_X</span><span class="p">(</span><span class="n">qubit</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    --X-- is equivalent to</span>
+<span class="sd">    --X-- </span>
+<span class="sd">    </span>
+<span class="sd">    is equivalent to</span>
+<span class="sd">    </span>
 <span class="sd">    --RX(pi)--</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">compile_rx</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">pi</span><span class="p">)</span>
@@ -13320,7 +13332,10 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">compile_Y</span><span class="p">(</span><span class="n">qubit</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    --Y-- is equivalent to</span>
+<span class="sd">    --Y-- </span>
+<span class="sd">    </span>
+<span class="sd">    is equivalent to</span>
+<span class="sd">    </span>
 <span class="sd">    --RY(pi)--</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">compile_ry</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">pi</span><span class="p">)</span>
@@ -13328,7 +13343,10 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">compile_Z</span><span class="p">(</span><span class="n">qubit</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    --Z-- is equivalent to</span>
+<span class="sd">    --Z-- </span>
+<span class="sd">    </span>
+<span class="sd">    is equivalent to</span>
+<span class="sd">    </span>
 <span class="sd">    --RZ(pi)--</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">compile_rz</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">pi</span><span class="p">)</span>
@@ -13336,7 +13354,10 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">compile_S</span><span class="p">(</span><span class="n">qubit</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    --S-- is equivalent to</span>
+<span class="sd">    --S-- </span>
+<span class="sd">    </span>
+<span class="sd">    is equivalent to</span>
+<span class="sd">    </span>
 <span class="sd">    --RZ(pi/2)--</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">compile_rz</span><span class="p">(</span><span class="n">qubit</span><span class="p">,</span> <span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
@@ -13482,7 +13503,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a new circuit to store the compiled circuit</span>
 <span class="n">compiled_circuit</span> <span class="o">=</span> <span class="n">cirq</span><span class="o">.</span><span class="n">Circuit</span><span class="p">()</span>
 
-<span class="c1"># For each moment in input_circuit get compiled operations</span>
+<span class="c1"># For each moment in input circuit get compiled operations</span>
 <span class="k">for</span> <span class="n">moment</span> <span class="ow">in</span> <span class="n">input_circuit</span><span class="p">:</span>
     <span class="n">compiled_circuit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_compiled_ops</span><span class="p">(</span><span class="n">moment</span><span class="p">))</span>
 
@@ -13663,8 +13684,8 @@ Number of moments in the compiled output circuit:  23
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Optimizer-Definitions">Optimizer Definitions<a class="anchor-link" href="#Optimizer-Definitions">&#182;</a></h3><p>Descriptions about a particular optimizer can be found in their respective definitions. Note that currently the <code>merge_different_ops()</code> function merges multiple operations to a single operation but it can easily be expanded to replace a list of operations with a different list of operations by simply adding a relevant <code>elif</code> comparison statement. I didn't implement that because I couldn't find a relatively simple quantum circuit identity.</p>
-<p>A custom optimizer can also be created by implementing the <code>custom_optimizer()</code> function.</p>
+<h3 id="Optimizer-Definitions">Optimizer Definitions<a class="anchor-link" href="#Optimizer-Definitions">&#182;</a></h3><p>Descriptions about a particular optimizer can be found in their respective definitions.
+A custom optimizer can also be created by implementing the <code>custom_optimizer()</code> function then adding it to the <code>optimizers</code> list below.</p>
 
 </div>
 </div>
@@ -13848,8 +13869,8 @@ Number of moments in the compiled output circuit:  23
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The function <code>optimize()</code> optimizes given circuit according to the <code>optimizers</code> passed to it. It manipulates the circuit using <code>cirq.MergeSingleQubitGates</code> and <code>cirq.DropEmptyMoments</code>. For more information on how they work click <a href="https://cirq.readthedocs.io/en/stable/api.html#optimization">here</a>.</p>
-<p>Note: This function currently supports optimizing single qubit gates only. Support for multi-qubit gates can be added using a variety of methods provided by Cirq <a href="https://cirq.readthedocs.io/en/stable/api.html#optimization">here</a>.</p>
+<p>The function <code>optimize()</code> optimizes given circuit according to the <code>optimizers</code> passed to it. It manipulates the circuit in-place using <code>cirq.MergeSingleQubitGates</code> and <code>cirq.DropEmptyMoments</code>. For more information on how they work click <a href="https://cirq.readthedocs.io/en/stable/api.html#optimization">here</a>.</p>
+<p>Note: This function currently supports optimizing single qubit gates only. Support for multi-qubit gates can be added using a variety of methods provided by Cirq mentioned <a href="https://cirq.readthedocs.io/en/stable/api.html#optimization">here</a>.</p>
 
 </div>
 </div>
@@ -13872,7 +13893,7 @@ Number of moments in the compiled output circuit:  23
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c1"># Clone the input circuit to avoid</span>
-    <span class="c1"># in-place modification by optimizers</span>
+    <span class="c1"># in-place modifications to it</span>
     <span class="n">opt_circuit</span> <span class="o">=</span> <span class="n">cirq</span><span class="o">.</span><span class="n">Circuit</span><span class="p">(</span><span class="n">circuit</span><span class="p">)</span>
     
     <span class="c1"># For each optimizer in optimizers</span>
@@ -13895,8 +13916,8 @@ Number of moments in the compiled output circuit:  23
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Optimizing our compiled circuit according to optimizers provided in the list <code>optimizers</code>.</p>
-<p>Note: The order of elements in <code>optimizers</code> matters as the first optimizer will be applied first before moving to the next one. It is also highly recommended that <code>merge_similar_op</code> be used as the first optimizer for best results.</p>
+<p>Optimizing our compiled circuit according to optimizers provided in the list below.</p>
+<p>Note: The order of elements in <code>optimizers</code> matters as they will be applied sequentially to the circuit. Also, it is highly recommended that <code>merge_similar_op</code> remains the first element for best results.</p>
 
 </div>
 </div>
@@ -13951,7 +13972,7 @@ Number of moments in the compiled output circuit:  23
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, after optimization we can see that there has been an improvement, as follows:</p>
+<p>Now, after optimization we can observe an improvement in the overhead:</p>
 
 </div>
 </div>
@@ -13994,8 +14015,8 @@ Number of Moments in the optimized circuit:  20
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As can be seen, after basic optimizations we were able to reduce the overhead generated by our compiled circuit. The optimized circuit also looks less involved than before.</p>
-<p>Keep in mind that not all circuits can be improved like this, for example if a circuit is already simplified by the optimizer's standards then it will not result in a better circuit.</p>
+<p>After basic optimizations we were able to reduce the overhead generated by our compiled circuit. The optimized circuit also looks less involved than before.</p>
+<p>Keep in mind that not all circuits can be improved like this, for example if a circuit is already simplified by optimizer's standards then it will not result in a better circuit.</p>
 
 </div>
 </div>
@@ -14024,7 +14045,7 @@ Number of Moments in the optimized circuit:  20
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of moments in the optimized circuit:  20
-Number of moments in the double optimized circuit:  20
+Number of moments in the double optimized circuit: 20
 </pre>
 </div>
 </div>
