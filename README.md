@@ -7,4 +7,4 @@ Required libraries:
 
 This program was created as a result of completing a task for Quantum Open Source Foundation's Mentorship Program. Link to that can be found [here](https://qosf.org/qc_mentorship/).
 
-Refer to `task_3.ipynb` Jupyter notebook for description and implementation of the program.
+Refer `task_3.html` for description and implementation of the program or `task_3.ipynb` Jupyter Notebook for an interactive session.
