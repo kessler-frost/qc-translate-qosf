@@ -8,6 +8,6 @@ Required libraries:
 
 This program was created as a result of completing a task (before deadline of 21st September 2020) for Quantum Open Source Foundation's Mentorship Program. Link to that can be found [here](https://qosf.org/qc_mentorship/).
 
-(recommended) Link to view the notebook rendered for evaluation :- [task_3.ipynb](https://nbviewer.jupyter.org/github/kessler-frost/qc-translate-qosf/blob/master/task_3.ipynb)
+Link to view the notebook rendered for evaluation (recommended) :- [task_3.ipynb](https://nbviewer.jupyter.org/github/kessler-frost/qc-translate-qosf/blob/master/task_3.ipynb)
 
 Alternatively, use `task_3.html` to view the HTML variant or `task_3.ipynb` for an interactive session.
