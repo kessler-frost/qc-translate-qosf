@@ -5,6 +5,6 @@ This is a quantum circuit compiler and optimizer which converts any given Cirq c
 Required libraries:
 * Cirq, installation instructions can be found [here](https://cirq.readthedocs.io/en/stable/install.html).
 
-This program was created as a result of completing a task for Quantum Open Source Foundation's Mentorship Program. Link to that can be found [here](https://qosf.org/qc_mentorship/).
+This program was created as a result of completing a task (before deadline of 21st September 2020) for Quantum Open Source Foundation's Mentorship Program. Link to that can be found [here](https://qosf.org/qc_mentorship/).
 
 Refer `task_3.html` for description and implementation of the program or `task_3.ipynb` Jupyter Notebook for an interactive session.
