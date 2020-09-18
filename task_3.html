@@ -13882,10 +13882,12 @@ A custom optimizer can also be created by implementing the <code>custom_optimize
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">optimize</span><span class="p">(</span><span class="n">circuit</span><span class="p">,</span> <span class="n">optimizers</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    input: circuit: cirq.Circuit object</span>
-<span class="sd">           optimizers: list of optimizer functions</span>
+<span class="sd">    input: </span>
+<span class="sd">        circuit: cirq.Circuit object</span>
+<span class="sd">        optimizers: list of optimizer functions</span>
 <span class="sd">    </span>
-<span class="sd">    return: opt_circuit: cirq.Circuit object</span>
+<span class="sd">    return: </span>
+<span class="sd">        opt_circuit: cirq.Circuit object</span>
 
 <span class="sd">    This function will apply given optimizers</span>
 <span class="sd">    on the input circuit and drop any empty</span>
@@ -14045,7 +14047,7 @@ Number of Moments in the optimized circuit:  20
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of moments in the optimized circuit:  20
-Number of moments in the double optimized circuit: 20
+Number of moments in the double optimized circuit:  20
 </pre>
 </div>
 </div>
