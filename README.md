@@ -2,7 +2,7 @@
 
 **Please use link mentioned below to view the notebook online as intended, instead of using GitHub's viewer.**
 
-Link to view the notebook rendered for evaluation :- [task_3.ipynb](https://nbviewer.jupyter.org/github/kessler-frost/qc-translate-qosf/blob/master/task_3.ipynb) (opens using nbviewer from Jupyter).
+Link to view the notebook rendered for evaluation :- [task_3.ipynb](https://nbviewer.jupyter.org/github/kessler-frost/qc-translate-qosf/blob/master/task_3.ipynb?flush_cache=true) (opens using nbviewer from Jupyter).
 
 Alternatively, use `task_3.html` to view the HTML variant or `task_3.ipynb` for an interactive session after cloning the repo.
 
